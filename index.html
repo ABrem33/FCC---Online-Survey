@@ -1,0 +1,167 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Free Agent Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us streamline the off-season and free agent market process
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input 
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter Your Name"
+             required
+             />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input 
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter Your Email"
+             required
+             />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input 
+             type="number"
+             name="age"
+             id="number"
+             min="10"
+             max="99"
+             class="form-control"
+             placeholder="Age"
+             />
+    </div>
+    <div class="form-group">
+      <p>Which Option Best Describes Your Current Classification?</p>
+      <select id="dropdown" name="class" class="form-control" required>
+        <option disabled selection value>Select Current Classification</option>
+        <option value="major">Major</option>
+        <option value="aa">AA</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="d">D</option>
+        <option value="e">E</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>What position do you play?</p>
+      <label>
+        <input 
+               name="user-position"
+               value="outfield"
+               type="radio"
+               class="input-radio"
+               checked
+               />Outfield</label>
+      <label>
+        <input 
+               name="user-position"
+               value="infield"
+               type="radio"
+               class="input-radio"
+               />Infield</label>
+      <label>
+        <input 
+               name="user-position"
+               value="pitcher"
+               type="radio"
+               class="input-radio"
+               />Pitcher</label>
+      <label>
+        <input 
+               name="user-position"
+               value="c/eh"
+               type="radio"
+               class="input-radio"
+               />C/EH</label>
+      <label>
+        <input 
+               name="user-position"
+               value="utility"
+               type="radio"
+               class="input-radio"
+               />Utility</label>
+    </div>
+    
+    <div class="form-group">
+      <p>What is your favorite thing about the Conference?</p>
+      <select id"most-like" name="mostlike" class="form-control" required>
+        <option disabled selected value>Select an Option</option>
+        <option value="competition">Better Competition</option>
+        <option value="pitching">Better Pitching</option>
+        <option value="balls">Harder Balls</option>
+        <option value="officials">Better Umpires</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>What would you like to see improved?
+      <span class"clue">(Check all that apply)</span>
+      </p>
+      <label>
+        <input 
+               name="prefer"
+               value="strike-zone"
+               type="checkbox"
+               class="input-checkbox"
+               />Clearly defined strike-zone</label>
+      <label>
+        <input 
+               name="prefer"
+               value="ball"
+               type="checkbox"
+               class="input-checkbox"
+               />Better or more consistent Ball</label>
+      <label>
+        <input 
+               name="prefer"
+               value="official"
+               type="checkbox"
+               class="input-checkbox"
+               />Better or more consistent Umpiring</label>
+      <label>
+        <input 
+               name="prefer"
+               value="testing"
+               type="checkbox"
+               class="input-checkbox"
+               />Better or more consistent Bat Testing</label>
+      <label>
+        <input 
+               name="prefer"
+               value="nothing"
+               type="checkbox"
+               class="input-checkbox"
+               />Nothing</label>
+    </div>
+    
+    <div class="form-group">
+      <p>Any Comments?</p>
+      <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter comment here..."></textarea>
+    </div>
+    
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+               
+    
+             
